@@ -413,203 +413,205 @@
 
             <!-- 11. COMPARATIVO ESTRATÉGICO -->
             <section id="comparativo" class="comparison-section" data-reveal>
-                <h2 class="section-title">Comparativo estratégico de las 4 rutas</h2>
-                <p class="section-subtitle">Las alternativas no solo cambian la interfaz. También cambian la complejidad de construcción, el esfuerzo de mantenimiento, la capacidad de escalar y la economía de IA.</p>
-                
-                <div class="scorecard-tabs-nav">
-                    <button class="scorecard-tab-btn active" onclick="switchScorecardTab(event, 'construccion')">Construcción y Operación</button>
-                    <button class="scorecard-tab-btn" onclick="switchScorecardTab(event, 'negocio')">Capacidad de Negocio</button>
-                    <button class="scorecard-tab-btn" onclick="switchScorecardTab(event, 'economia')">Economía y Escalamiento</button>
-                </div>
+                <div class="container">
+                    <h2 class="section-title">Comparativo estratégico de las 4 rutas</h2>
+                    <p class="section-subtitle">Las alternativas no solo cambian la interfaz. También cambian la complejidad de construcción, el esfuerzo de mantenimiento, la capacidad de escalar y la economía de IA.</p>
+                    
+                    <div class="scorecard-tabs-nav">
+                        <button class="scorecard-tab-btn active" onclick="switchScorecardTab(event, 'construccion')">Construcción y Operación</button>
+                        <button class="scorecard-tab-btn" onclick="switchScorecardTab(event, 'negocio')">Capacidad de Negocio</button>
+                        <button class="scorecard-tab-btn" onclick="switchScorecardTab(event, 'economia')">Economía y Escalamiento</button>
+                    </div>
 
-                <div id="construccion" class="scorecard-tab-content active">
-                    <!-- BLOQUE 1 — Construcción y operación -->
-                    <div class="scorecard-block">
-                        <div class="scorecard-header">
-                            <h4>1. Construcción y operación</h4>
-                            <p>Comparación de esfuerzo inicial, velocidad de activación y sostenibilidad operativa cuando la solución debe ser mantenida o heredada por otros equipos.</p>
-                        </div>
-                        <div class="scorecard-table">
-                            <div class="scorecard-row scorecard-header-row">
-                                <div class="scorecard-cell label">Criterio</div>
-                                <div class="scorecard-cell">Plataforma ligera</div>
-                                <div class="scorecard-cell">Slack + n8n + HubSpot</div>
-                                <div class="scorecard-cell">Claude Project + Skills</div>
-                                <div class="scorecard-cell">Backend agentic propio</div>
+                    <div id="construccion" class="scorecard-tab-content active">
+                        <!-- BLOQUE 1 — Construcción y operación -->
+                        <div class="scorecard-block">
+                            <div class="scorecard-header">
+                                <h4>1. Construcción y operación</h4>
+                                <p>Comparación de esfuerzo inicial, velocidad de activación y sostenibilidad operativa cuando la solución debe ser mantenida o heredada por otros equipos.</p>
                             </div>
-                            <!-- Row 1 -->
-                            <div class="scorecard-row">
-                                <div class="scorecard-cell label">Velocidad de piloto</div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Media</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Media</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Media</span></div>
-                            </div>
-                            <!-- Row 2 -->
-                            <div class="scorecard-row">
-                                <div class="scorecard-cell label">Complejidad de construcción</div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Media-Alta</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-low">Alta</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Baja-Media</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-low">Alta</span></div>
-                            </div>
-                            <!-- Row 3 -->
-                            <div class="scorecard-row">
-                                <div class="scorecard-cell label">Facilidad de mantenimiento</div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Media-Alta</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-low">Baja-Media si escala</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Media</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-high">Alta</span></div>
-                            </div>
-                            <!-- Row 4 -->
-                            <div class="scorecard-row">
-                                <div class="scorecard-cell label">Facilidad de handoff</div>
-                                <div class="scorecard-cell"><span class="score-badge score-high">Alta</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-low">Baja-Media</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Media</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-high">Alta</span></div>
-                            </div>
-                            <!-- Row 5 -->
-                            <div class="scorecard-row">
-                                <div class="scorecard-cell label">Riesgo de desorden</div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Medio</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-low">Alto</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Medio</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-high">Bajo-Medio</span></div>
+                            <div class="scorecard-table">
+                                <div class="scorecard-row scorecard-header-row">
+                                    <div class="scorecard-cell label">Criterio</div>
+                                    <div class="scorecard-cell">Plataforma ligera</div>
+                                    <div class="scorecard-cell">Slack + n8n + HubSpot</div>
+                                    <div class="scorecard-cell">Claude Project + Skills</div>
+                                    <div class="scorecard-cell">Backend agentic propio</div>
+                                </div>
+                                <!-- Row 1 -->
+                                <div class="scorecard-row">
+                                    <div class="scorecard-cell label">Velocidad de piloto</div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Media</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Media</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Media</span></div>
+                                </div>
+                                <!-- Row 2 -->
+                                <div class="scorecard-row">
+                                    <div class="scorecard-cell label">Complejidad de construcción</div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Media-Alta</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-low">Alta</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Baja-Media</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-low">Alta</span></div>
+                                </div>
+                                <!-- Row 3 -->
+                                <div class="scorecard-row">
+                                    <div class="scorecard-cell label">Facilidad de mantenimiento</div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Media-Alta</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-low">Baja-Media si escala</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Media</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-high">Alta</span></div>
+                                </div>
+                                <!-- Row 4 -->
+                                <div class="scorecard-row">
+                                    <div class="scorecard-cell label">Facilidad de handoff</div>
+                                    <div class="scorecard-cell"><span class="score-badge score-high">Alta</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-low">Baja-Media</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Media</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-high">Alta</span></div>
+                                </div>
+                                <!-- Row 5 -->
+                                <div class="scorecard-row">
+                                    <div class="scorecard-cell label">Riesgo de desorden</div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Medio</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-low">Alto</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Medio</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-high">Bajo-Medio</span></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div id="negocio" class="scorecard-tab-content">
-                    <!-- BLOQUE 2 — Capacidad de negocio -->
-                    <div class="scorecard-block">
-                        <div class="scorecard-header">
-                            <h4>2. Capacidad de negocio</h4>
-                            <p>Comparación de qué tan bien soporta cada alternativa los procesos comerciales críticos que SellUp necesita cubrir.</p>
-                        </div>
-                        <div class="scorecard-table">
-                            <div class="scorecard-row scorecard-header-row">
-                                <div class="scorecard-cell label">Criterio</div>
-                                <div class="scorecard-cell">Plataforma ligera</div>
-                                <div class="scorecard-cell">Slack + n8n + HubSpot</div>
-                                <div class="scorecard-cell">Claude Project + Skills</div>
-                                <div class="scorecard-cell">Backend agentic propio</div>
+                    <div id="negocio" class="scorecard-tab-content">
+                        <!-- BLOQUE 2 — Capacidad de negocio -->
+                        <div class="scorecard-block">
+                            <div class="scorecard-header">
+                                <h4>2. Capacidad de negocio</h4>
+                                <p>Comparación de qué tan bien soporta cada alternativa los procesos comerciales críticos que SellUp necesita cubrir.</p>
                             </div>
-                            <div class="scorecard-row">
-                                <div class="scorecard-cell label">Cotización robusta</div>
-                                <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Media</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Baja-Media</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
-                            </div>
-                            <div class="scorecard-row">
-                                <div class="scorecard-cell label">Aprobaciones y estados</div>
-                                <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Media</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-low">Baja</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
-                            </div>
-                            <div class="scorecard-row">
-                                <div class="scorecard-cell label">Trazabilidad</div>
-                                <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Media</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Baja-Media</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
-                            </div>
-                            <div class="scorecard-row">
-                                <div class="scorecard-cell label">Alertas recurrentes</div>
-                                <div class="scorecard-cell"><span class="score-badge score-high">Alta</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-high">Alta</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-low">Baja</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
-                            </div>
-                            <div class="scorecard-row">
-                                <div class="scorecard-cell label">Dashboards gerenciales</div>
-                                <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-low">Baja</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-low">Baja</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
-                            </div>
-                            <div class="scorecard-row">
-                                <div class="scorecard-cell label">Exp. conversacional</div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Media</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
+                            <div class="scorecard-table">
+                                <div class="scorecard-row scorecard-header-row">
+                                    <div class="scorecard-cell label">Criterio</div>
+                                    <div class="scorecard-cell">Plataforma ligera</div>
+                                    <div class="scorecard-cell">Slack + n8n + HubSpot</div>
+                                    <div class="scorecard-cell">Claude Project + Skills</div>
+                                    <div class="scorecard-cell">Backend agentic propio</div>
+                                </div>
+                                <div class="scorecard-row">
+                                    <div class="scorecard-cell label">Cotización robusta</div>
+                                    <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Media</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Baja-Media</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
+                                </div>
+                                <div class="scorecard-row">
+                                    <div class="scorecard-cell label">Aprobaciones y estados</div>
+                                    <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Media</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-low">Baja</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
+                                </div>
+                                <div class="scorecard-row">
+                                    <div class="scorecard-cell label">Trazabilidad</div>
+                                    <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Media</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Baja-Media</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
+                                </div>
+                                <div class="scorecard-row">
+                                    <div class="scorecard-cell label">Alertas recurrentes</div>
+                                    <div class="scorecard-cell"><span class="score-badge score-high">Alta</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-high">Alta</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-low">Baja</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
+                                </div>
+                                <div class="scorecard-row">
+                                    <div class="scorecard-cell label">Dashboards gerenciales</div>
+                                    <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-low">Baja</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-low">Baja</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
+                                </div>
+                                <div class="scorecard-row">
+                                    <div class="scorecard-cell label">Exp. conversacional</div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Media</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div id="economia" class="scorecard-tab-content">
-                    <!-- BLOQUE 3 — Economía y escalamiento -->
-                    <div class="scorecard-block">
-                        <div class="scorecard-header">
-                            <h4>3. Economía y escalamiento</h4>
-                            <p>Comparación de inversión inicial, gasto en IA durante la construcción, costos de ejecución y capacidad de controlar el costo cuando el uso crece.</p>
-                        </div>
-                        <div class="scorecard-table">
-                            <div class="scorecard-row scorecard-header-row">
-                                <div class="scorecard-cell label">Criterio</div>
-                                <div class="scorecard-cell">Plataforma ligera</div>
-                                <div class="scorecard-cell">Slack + n8n + HubSpot</div>
-                                <div class="scorecard-cell">Claude Project + Skills</div>
-                                <div class="scorecard-cell">Backend agentic propio</div>
+                    <div id="economia" class="scorecard-tab-content">
+                        <!-- BLOQUE 3 — Economía y escalamiento -->
+                        <div class="scorecard-block">
+                            <div class="scorecard-header">
+                                <h4>3. Economía y escalamiento</h4>
+                                <p>Comparación de inversión inicial, gasto en IA durante la construcción, costos de ejecución y capacidad de controlar el costo cuando el uso crece.</p>
                             </div>
-                            <div class="scorecard-row">
-                                <div class="scorecard-cell label">Costo de construcción</div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Medio-Alto</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Medio-Alto</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Bajo-Medio</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Medio-Alto</span></div>
-                            </div>
-                            <div class="scorecard-row">
-                                <div class="scorecard-cell label">Tokens IA (Construcción)</div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Medio-Alto</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Medio-Alto</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Bajo-Medio</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Medio-Alto</span></div>
-                            </div>
-                            <div class="scorecard-row">
-                                <div class="scorecard-cell label">Costo de ejecución</div>
-                                <div class="scorecard-cell"><span class="score-badge score-accent">Controlable</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Variable por workflows + IA</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-low">Licencias</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-accent">Altamente medible</span></div>
-                            </div>
-                            <div class="scorecard-row">
-                                <div class="scorecard-cell label">Control costo x agente</div>
-                                <div class="scorecard-cell"><span class="score-badge score-high">Alto</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Medio</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Bajo-Medio</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alto</span></div>
-                            </div>
-                            <div class="scorecard-row">
-                                <div class="scorecard-cell label">Costo al escalar</div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Medio</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Medio-Alto</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-low">Alto (Licencias)</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Eficiente</span></div>
-                            </div>
-                            <div class="scorecard-row">
-                                <div class="scorecard-cell label">Capacidad optimización</div>
-                                <div class="scorecard-cell"><span class="score-badge score-high">Alta</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Media</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-medium">Baja-Media</span></div>
-                                <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
+                            <div class="scorecard-table">
+                                <div class="scorecard-row scorecard-header-row">
+                                    <div class="scorecard-cell label">Criterio</div>
+                                    <div class="scorecard-cell">Plataforma ligera</div>
+                                    <div class="scorecard-cell">Slack + n8n + HubSpot</div>
+                                    <div class="scorecard-cell">Claude Project + Skills</div>
+                                    <div class="scorecard-cell">Backend agentic propio</div>
+                                </div>
+                                <div class="scorecard-row">
+                                    <div class="scorecard-cell label">Costo de construcción</div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Medio-Alto</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Medio-Alto</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Bajo-Medio</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Medio-Alto</span></div>
+                                </div>
+                                <div class="scorecard-row">
+                                    <div class="scorecard-cell label">Tokens IA (Construcción)</div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Medio-Alto</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Medio-Alto</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Bajo-Medio</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Medio-Alto</span></div>
+                                </div>
+                                <div class="scorecard-row">
+                                    <div class="scorecard-cell label">Costo de ejecución</div>
+                                    <div class="scorecard-cell"><span class="score-badge score-accent">Controlable</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Variable por workflows + IA</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-low">Licencias</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-accent">Altamente medible</span></div>
+                                </div>
+                                <div class="scorecard-row">
+                                    <div class="scorecard-cell label">Control costo x agente</div>
+                                    <div class="scorecard-cell"><span class="score-badge score-high">Alto</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Medio</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Bajo-Medio</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alto</span></div>
+                                </div>
+                                <div class="scorecard-row">
+                                    <div class="scorecard-cell label">Costo al escalar</div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Medio</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Medio-Alto</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-low">Alto (Licencias)</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Eficiente</span></div>
+                                </div>
+                                <div class="scorecard-row">
+                                    <div class="scorecard-cell label">Capacidad optimización</div>
+                                    <div class="scorecard-cell"><span class="score-badge score-high">Alta</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Media</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-medium">Baja-Media</span></div>
+                                    <div class="scorecard-cell"><span class="score-badge score-very-high">Muy alta</span></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <style>
-                    .scorecard-tabs-nav { display: flex; gap: 10px; margin-bottom: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; }
-                    .scorecard-tab-btn { background: none; border: none; padding: 0.5rem 1rem; color: var(--text-secondary); cursor: pointer; transition: 0.3s; }
-                    .scorecard-tab-btn.active { color: var(--text-primary); border-bottom: 2px solid var(--accent-blue); }
-                    .scorecard-tab-content { display: none; }
-                    .scorecard-tab-content.active { display: block; }
-                </style>
+                    <style>
+                        .scorecard-tabs-nav { display: flex; gap: 10px; margin-bottom: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; }
+                        .scorecard-tab-btn { background: none; border: none; padding: 0.5rem 1rem; color: var(--text-secondary); cursor: pointer; transition: 0.3s; }
+                        .scorecard-tab-btn.active { color: var(--text-primary); border-bottom: 2px solid var(--accent-blue); }
+                        .scorecard-tab-content { display: none; }
+                        .scorecard-tab-content.active { display: block; }
+                    </style>
+                </div>
             </section>
             
             <section id="posicionamiento" style="margin-top: 8rem;" data-reveal>
