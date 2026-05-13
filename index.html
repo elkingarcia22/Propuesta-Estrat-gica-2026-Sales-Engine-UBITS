@@ -20,8 +20,10 @@
             <div class="nav-links">
                 <a href="#reto">El Reto</a>
                 <a href="#agentes">Agentes</a>
-                <a href="#soluciones">Soluciones</a>
+                <a href="#soluciones">Alternativas</a>
+                <a href="#comparativo">Comparativo</a>
                 <a href="#recomendacion">Recomendación</a>
+                <a href="#fases">Ruta</a>
             </div>
         </div>
     </nav>
@@ -255,7 +257,7 @@
         </div>
     </section>
 
-    <!-- 9 & 10. SOLUCIONES Y COMPARATIVO -->
+    <!-- 10. EVALUACIÓN DE ALTERNATIVAS -->
     <section id="soluciones" data-reveal>
         <div class="container">
             <h2 class="section-title">Evaluación de Alternativas</h2>
@@ -407,10 +409,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <!-- 11. COMPARATIVO ESTRATÉGICO -->
-            <div id="comparativo" class="comparison-section" data-reveal>
+            <section id="comparativo" class="comparison-section" data-reveal>
                 <h2 class="section-title">Comparativo estratégico de las 4 rutas</h2>
                 <p class="section-subtitle">Las alternativas no solo cambian la interfaz. También cambian la complejidad de construcción, el esfuerzo de mantenimiento, la capacidad de escalar y la economía de IA.</p>
                 
@@ -608,17 +610,9 @@
                     .scorecard-tab-content { display: none; }
                     .scorecard-tab-content.active { display: block; }
                 </style>
-                <script>
-                    function switchScorecardTab(event, tabId) {
-                        document.querySelectorAll('.scorecard-tab-content').forEach(c => c.classList.remove('active'));
-                        document.querySelectorAll('.scorecard-tab-btn').forEach(b => b.classList.remove('active'));
-                        document.getElementById(tabId).classList.add('active');
-                        event.currentTarget.classList.add('active');
-                    }
-                </script>
-            </div>
+            </section>
             
-            <div id="posicionamiento" style="margin-top: 8rem;" data-reveal>
+            <section id="posicionamiento" style="margin-top: 8rem;" data-reveal>
                 <h3 style="text-align: center; font-size: 2rem; margin-bottom: 1rem;">Posicionamiento de las rutas evaluadas</h3>
                 <p style="text-align: center; color: var(--text-secondary); max-width: 700px; margin: 0 auto 3rem;">Las alternativas no compiten solo por funcionalidad. También implican un trade-off entre velocidad de activación y capacidad de sostener procesos comerciales críticos a escala.</p>
                 

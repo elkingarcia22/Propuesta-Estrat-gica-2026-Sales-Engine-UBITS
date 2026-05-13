@@ -70,4 +70,36 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Scrollspy for Nav Links
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    const updateActiveLink = () => {
+        let current = "";
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (window.scrollY >= sectionTop - 150) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (current && link.getAttribute('href').includes(current)) {
+                link.classList.add('active');
+            }
+        });
+    };
+
+    window.addEventListener('scroll', updateActiveLink);
+    updateActiveLink(); // Initial check
 });
+
+// Global functions
+function switchScorecardTab(event, tabId) {
+    document.querySelectorAll('.scorecard-tab-content').forEach(c => c.classList.remove('active'));
+    document.querySelectorAll('.scorecard-tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(tabId).classList.add('active');
+    event.currentTarget.classList.add('active');
+}
