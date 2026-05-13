@@ -4,7 +4,7 @@
 **SellUp** (provisionalmente Sales Engine UBITS) no es una simple colección de "bots" o la integración de Gems de Gemini. Es una **capacidad comercial estratégica** diseñada para transformar un proceso de ventas hoy fragmentado y manual en un sistema inteligente, conectado y escalable.
 
 - **Qué busca resolver:** Elimina los cuellos de botella en la prospección, la preparación inconsistente de llamadas, el riesgo operativo y la lentitud en la generación de cotizaciones, y la falta de visibilidad gerencial sobre el pipeline en tiempo real.
-- **Por qué no es solo unificar Gems:** Las Gems son "cerebros" aislados sin manos ni memoria. SellUp les da **capacidad de ejecución** (integración con HubSpot y Slack), **persistencia** (base de datos propia) y **gobierno** (reglas de negocio y trazabilidad), convirtiéndolas de curiosidades tecnológicas en herramientas productivas.
+- **Por qué no es solo unificar Gems:** Las Gems son "cerebros" aislados sin manos ni memoria. SellUp les da **capacidad de ejecución** (integración con HubSpot, Slack y Samu. IA), **persistencia** (base de datos propia) y **gobierno** (reglas de negocio y trazabilidad), convirtiéndolas de curiosidades tecnológicas en herramientas productivas.
 - **Oportunidad Estratégica:** Representa el paso de una "artesanía de ventas" a una "ingeniería de ventas", permitiendo que el equipo comercial se enfoque en la relación y el cierre, mientras la IA orquesta la inteligencia, los datos y la documentación necesaria para ganar deals.
 
 ## 2. Audiencia principal del micrositio
@@ -37,7 +37,7 @@ La estructura sigue un flujo de **Problema -> Solución -> Decisión**:
 | **Hero / Apertura** | Impacto y propósito | "Vender más, con más inteligencia y menos fricción." | Título potente, visión 360 y valor agregado. | Video de fondo sutil / Animación de "motor". | Alta |
 | **El Reto / Diagnóstico** | Validar los dolores | "Nuestro proceso actual tiene fugas de tiempo y consistencia." | Resumen de los 5 dolores críticos. | Heatmap de dolores en el funnel. | Media |
 | **Flujo Comercial** | Entender el contexto | "SellUp se inserta en cada etapa vital del vendedor." | Mapa de etapas desde prospección a cierre. | Timeline interactivo del Journey. | Baja |
-| **Capacidades (Agentes)** | Mostrar la "magia" real | "7 Agentes especializados trabajando en sincronía." | Grid de agentes con funciones y outputs. | Cards interactivas / Diagrama de red. | Media |
+| **Capacidades (Agentes)** | Mostrar la "magia" real | "8 capacidades especializadas trabajando en sincronía." | Grid de agentes con funciones y outputs. | Cards interactivas / Diagrama de red. | Media |
 | **Rutas de Solución** | Transparencia técnica | "Evaluamos 4 caminos según velocidad y robustez." | Resumen de las 4 alternativas (Platform, Slack, Claude, Backend). | Matriz 2x2 (Velocidad vs Robustez). | Alta |
 | **Comparativa Visual** | Facilitar la elección | "La mejor opción depende de nuestra ambición." | Tabla comparativa de fortalezas y límites. | Matriz comparativa interactiva. | Alta |
 | **Economía de IA** | Realismo financiero | "IA escalable con costos controlados y trazables." | Costos de construcción vs ejecución (tokens). | Gráfico de barras de costos por fase. | Alta |
@@ -64,7 +64,7 @@ La estructura sigue un flujo de **Problema -> Solución -> Decisión**:
 
 ## 9. Jerarquía de mensajes
 1.  **Principal:** SellUp es el sistema operativo inteligente que Sales necesita para escalar.
-2.  **Secundario 1:** No es solo IA, es un sistema conectado a HubSpot y Slack.
+2.  **Secundario 1:** No es solo IA, es un sistema conectado a HubSpot, Slack y Samu. IA.
 3.  **Secundario 2:** La cotización es el corazón operativo que debemos proteger y automatizar.
 4.  **Secundario 3:** Tenemos una ruta clara de inversión y construcción por fases.
 5.  **Cierre:** La decisión técnica de hoy define nuestra capacidad competitiva de mañana.
@@ -86,7 +86,7 @@ La estructura sigue un flujo de **Problema -> Solución -> Decisión**:
 | 1 | Hero | Enganche y Visión | Video/Hero dinámico | Crítica |
 | 2 | Diagnóstico | Validar urgencia | Heatmap de Dolores | Alta |
 | 3 | Solución SellUp | Presentar el concepto | Diagrama de Ecosistema | Crítica |
-| 4 | Los 7 Agentes | Demostrar valor | Grid de Cards Interactivas | Alta |
+| 4 | Los 8 Agentes | Demostrar valor | Grid de Cards Interactivas | Alta |
 | 5 | Comparativa 4 Rutas | Facilitar decisión | Matriz Comparativa | Crítica |
 | 6 | Economía y Costos | Viabilidad financiera | Gráfico de Costos/Tokens | Media |
 | 7 | Recomendación | Definir rumbo | Arquitectura Estratégica | Crítica |
