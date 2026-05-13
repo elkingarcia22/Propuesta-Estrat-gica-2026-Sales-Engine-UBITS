@@ -753,6 +753,11 @@ nav {
     border-radius: 0.4rem;
     text-transform: uppercase;
     letter-spacing: 0.02em;
+    display: inline-block;
+}
+
+.glass-card .chip {
+    margin: 0.75rem 0 1.25rem;
 }
 
 .chip-blue { background: rgba(59, 130, 246, 0.15); color: #93c5fd; border: 1px solid rgba(59, 130, 246, 0.3); }
