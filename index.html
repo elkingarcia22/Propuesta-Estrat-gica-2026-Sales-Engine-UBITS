@@ -48,166 +48,142 @@
             <h2 class="section-title">El Reto de Negocio</h2>
             <p class="section-intro-main">El reto no es sumar más herramientas, sino convertir capacidades aisladas en un sistema comercial coordinado.</p>
             <p class="section-intro-support">Hoy la operación depende demasiado del conocimiento individual, de tareas manuales y de flujos críticos con baja trazabilidad.</p>
-            <div class="grid grid-3">
-                <div class="glass-card">
-                    <i data-lucide="layers"></i>
-                    <h3>Inteligencia dispersa</h3>
-                    <p>Gems, prompts y conocimiento comercial valioso existen, pero viven separados del flujo real de ventas y del CRM.</p>
-                </div>
-                <div class="glass-card">
-                    <i data-lucide="clock"></i>
-                    <h3>Fricción operativa</h3>
-                    <p>Tareas manuales en prospección, preparación y seguimiento consumen tiempo que debería estar puesto en avanzar oportunidades.</p>
-                </div>
-                <div class="glass-card">
-                    <i data-lucide="shield-check"></i>
-                    <h3>Cotización sin suficiente gobierno</h3>
-                    <p>La cotización combina velocidad, reglas, aprobaciones y documentos; hoy es un flujo crítico que requiere mayor control y trazabilidad.</p>
-                </div>
+            
+            <div class="scorecard-tabs-nav" style="margin-top: 3rem;">
+                <button class="scorecard-tab-btn active" onclick="switchRetoTab(event, 'tab-flujo')">Flujo Comercial Actual</button>
+                <button class="scorecard-tab-btn" onclick="switchRetoTab(event, 'tab-dolores')">Mapa de Dolores</button>
+                <button class="scorecard-tab-btn" onclick="switchRetoTab(event, 'tab-eficiencia')">Dónde se genera eficiencia</button>
             </div>
-        </div>
-    </section>
 
-    <!-- 3. FLUJO COMERCIAL ACTUAL -->
-    <section id="flujo" data-reveal>
-        <div class="container">
-            <h2 class="section-title">Flujo Comercial Actual</h2>
-            <p class="section-subtitle">El reto no aparece en un único punto: las fricciones se acumulan a lo largo del flujo comercial, desde la búsqueda de cuentas hasta la construcción de una propuesta lista para avanzar.</p>
-            <div class="timeline">
-                <div class="timeline-items">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <span class="timeline-number">01</span>
-                        <h4>Prospección</h4>
-                        <p>Identificación de cuentas y oportunidades.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <span class="timeline-number">02</span>
-                        <h4>Investigación</h4>
-                        <p>Contexto de empresa, señales y decisores.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <span class="timeline-number">03</span>
-                        <h4>Contacto</h4>
-                        <p>Speech, outreach y agendamiento.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <span class="timeline-number">04</span>
-                        <h4>Reunión</h4>
-                        <p>Discovery, demo y levantamiento de necesidades.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <span class="timeline-number">05</span>
-                        <h4>Seguimiento</h4>
-                        <p>Compromisos, tareas y próximos pasos.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <span class="timeline-number">06</span>
-                        <h4>Cotización</h4>
-                        <p>Propuesta económica, reglas y aprobaciones.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <span class="timeline-number">07</span>
-                        <h4>Venta interna</h4>
-                        <p>Business case para el sponsor del cliente.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <span class="timeline-number">08</span>
-                        <h4>Cierre</h4>
-                        <p>Negociación, decisión y formalización.</p>
+            <div id="tab-flujo" class="reto-tab-content active">
+                <div class="timeline" style="margin-top: 2rem;">
+                    <div class="timeline-items">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-number">01</span>
+                            <h4>Prospección</h4>
+                            <p>Identificación de cuentas y oportunidades.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-number">02</span>
+                            <h4>Investigación</h4>
+                            <p>Contexto de empresa, señales y decisores.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-number">03</span>
+                            <h4>Contacto</h4>
+                            <p>Speech, outreach y agendamiento.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-number">04</span>
+                            <h4>Reunión</h4>
+                            <p>Discovery, demo y levantamiento de necesidades.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-number">05</span>
+                            <h4>Seguimiento</h4>
+                            <p>Compromisos, tareas y próximos pasos.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-number">06</span>
+                            <h4>Cotización</h4>
+                            <p>Propuesta económica, reglas y aprobaciones.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-number">07</span>
+                            <h4>Venta interna</h4>
+                            <p>Business case para el sponsor del cliente.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-number">08</span>
+                            <h4>Cierre</h4>
+                            <p>Negociación, decisión y formalización.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <p class="section-transition-phrase">SellUp se evalúa como una capa transversal para intervenir selectivamente estos momentos del flujo.</p>
-        </div>
-    </section>
 
-    <!-- 4. DOLORES CRÍTICOS -->
-    <section id="dolores" data-reveal>
-        <div class="container">
-            <h2 class="section-title">Mapa de Dolores</h2>
-            <p class="section-subtitle">Las fricciones no se concentran en una sola etapa. Aparecen desde la construcción de contexto hasta el control de propuestas, seguimiento y visibilidad gerencial.</p>
-            <div class="pain-grid">
-                <div class="pain-card">
-                    <span class="card-tag">Prospección + Investigación</span>
-                    <i data-lucide="search"></i>
-                    <h4>Research comercial manual</h4>
-                    <p>La búsqueda de contexto, señales y datos relevantes exige trabajo manual repetitivo antes de priorizar una cuenta.</p>
-                </div>
-                <div class="pain-card">
-                    <span class="card-tag">Contacto</span>
-                    <i data-lucide="message-square"></i>
-                    <h4>Preparación comercial desigual</h4>
-                    <p>El nivel de contexto y calidad del abordaje varía según la experiencia, el tiempo disponible y las herramientas que use cada vendedor.</p>
-                </div>
-                <div class="pain-card critical">
-                    <span class="card-tag">Cotización</span>
-                    <i data-lucide="file-warning"></i>
-                    <h4>Cotización como flujo crítico</h4>
-                    <p>La propuesta económica requiere datos, reglas, aprobaciones y documentos; sin una capa de control, se vuelve lenta, frágil y difícil de gobernar.</p>
-                </div>
-                <div class="pain-card">
-                    <span class="card-tag">Seguimiento</span>
-                    <i data-lucide="list-todo"></i>
-                    <h4>Seguimiento post-reunión fragmentado</h4>
-                    <p>Compromisos, tareas y próximos pasos pueden quedar dispersos entre notas, transcripciones y actualizaciones manuales en HubSpot.</p>
-                </div>
-                <div class="pain-card">
-                    <span class="card-tag">Gestión</span>
-                    <i data-lucide="eye-off"></i>
-                    <h4>Visibilidad gerencial limitada</h4>
-                    <p>Managers y líderes dependen de información fragmentada para detectar bloqueos, pendientes y oportunidades de intervención.</p>
+            <div id="tab-dolores" class="reto-tab-content">
+                <div class="pain-grid" style="margin-top: 2rem;">
+                    <div class="pain-card">
+                        <span class="card-tag">Prospección + Investigación</span>
+                        <i data-lucide="search"></i>
+                        <h4>Research comercial manual</h4>
+                        <p>La búsqueda de contexto, señales y datos relevantes exige trabajo manual repetitivo antes de priorizar una cuenta.</p>
+                    </div>
+                    <div class="pain-card">
+                        <span class="card-tag">Contacto</span>
+                        <i data-lucide="message-square"></i>
+                        <h4>Preparación comercial desigual</h4>
+                        <p>El nivel de contexto y calidad del abordaje varía según la experiencia, el tiempo disponible y las herramientas que use cada vendedor.</p>
+                    </div>
+                    <div class="pain-card critical">
+                        <span class="card-tag">Cotización</span>
+                        <i data-lucide="file-warning"></i>
+                        <h4>Cotización como flujo crítico</h4>
+                        <p>La propuesta económica requiere datos, reglas, aprobaciones y documentos; sin una capa de control, se vuelve lenta, frágil y difícil de gobernar.</p>
+                    </div>
+                    <div class="pain-card">
+                        <span class="card-tag">Seguimiento</span>
+                        <i data-lucide="list-todo"></i>
+                        <h4>Seguimiento post-reunión fragmentado</h4>
+                        <p>Compromisos, tareas y próximos pasos pueden quedar dispersos entre notas, transcripciones y actualizaciones manuales en HubSpot.</p>
+                    </div>
+                    <div class="pain-card">
+                        <span class="card-tag">Gestión</span>
+                        <i data-lucide="eye-off"></i>
+                        <h4>Visibilidad gerencial limitada</h4>
+                        <p>Managers y líderes dependen de información fragmentada para detectar bloqueos, pendientes y oportunidades de intervención.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-
-
-    <!-- 6. DONDE SE GENERA EFICIENCIA -->
-    <section id="eficiencia" data-reveal>
-        <div class="container">
-            <h2 class="section-title">Dónde se genera eficiencia</h2>
-            <p class="section-subtitle">SellUp genera valor no solo por automatizar tareas, sino por hacer que la operación comercial sea más consistente, gobernable y visible.</p>
-            <div class="grid grid-3">
-                <div class="glass-card">
-                    <span class="efficiency-tag">Operación Comercial</span>
-                    <h4>Preparación más ágil</h4>
-                    <p>Menos esfuerzo manual para reunir contexto de cuentas, decisores y abordajes antes de avanzar una oportunidad.</p>
-                </div>
-                <div class="glass-card">
-                    <span class="efficiency-tag">Operación Comercial</span>
-                    <h4>Mayor consistencia comercial</h4>
-                    <p>Speeches, briefs y propuestas pueden construirse con contexto, reglas y plantillas más estandarizadas.</p>
-                </div>
-                <div class="glass-card">
-                    <span class="efficiency-tag">Gobierno del Proceso</span>
-                    <h4>Trazabilidad operativa</h4>
-                    <p>Procesos, versiones, aprobaciones y resultados pueden quedar registrados para seguimiento, auditoría y mejora.</p>
-                </div>
-                <div class="glass-card">
-                    <span class="efficiency-tag">Operación Comercial</span>
-                    <h4>Menor carga administrativa</h4>
-                    <p>La automatización de capturas, actualizaciones y handoffs reduce trabajo repetitivo sin eliminar las validaciones necesarias.</p>
-                </div>
-                <div class="glass-card">
-                    <span class="efficiency-tag">Gobierno del Proceso</span>
-                    <h4>Aprobaciones más ordenadas</h4>
-                    <p>Cotizaciones y excepciones pueden recorrer flujos claros, con responsables, estados y decisiones visibles.</p>
-                </div>
-                <div class="glass-card">
-                    <span class="efficiency-tag">Gestión</span>
-                    <h4>Mayor visibilidad de gestión</h4>
-                    <p>Managers y líderes pueden detectar bloqueos, pendientes y oportunidades de intervención con mayor claridad.</p>
+            <div id="tab-eficiencia" class="reto-tab-content">
+                <div class="grid grid-3" style="margin-top: 2rem;">
+                    <div class="glass-card">
+                        <span class="efficiency-tag">Operación Comercial</span>
+                        <h4>Preparación más ágil</h4>
+                        <p>Menos esfuerzo manual para reunir contexto de cuentas, decisores y abordajes antes de avanzar una oportunidad.</p>
+                    </div>
+                    <div class="glass-card">
+                        <span class="efficiency-tag">Operación Comercial</span>
+                        <h4>Mayor consistencia comercial</h4>
+                        <p>Speeches, briefs y propuestas pueden construirse con contexto, reglas y plantillas más estandarizadas.</p>
+                    </div>
+                    <div class="glass-card">
+                        <span class="efficiency-tag">Gobierno del Proceso</span>
+                        <h4>Trazabilidad operativa</h4>
+                        <p>Procesos, versiones, aprobaciones y resultados pueden quedar registrados para seguimiento, auditoría y mejora.</p>
+                    </div>
+                    <div class="glass-card">
+                        <span class="efficiency-tag">Operación Comercial</span>
+                        <h4>Menor carga administrativa</h4>
+                        <p>La automatización de capturas, actualizaciones y handoffs reduce trabajo repetitivo sin eliminar las validaciones necesarias.</p>
+                    </div>
+                    <div class="glass-card">
+                        <span class="efficiency-tag">Gobierno del Proceso</span>
+                        <h4>Mejor visibilidad</h4>
+                        <p>Los líderes tienen datos claros sobre el estado de las oportunidades, bloqueos y desempeño del proceso comercial.</p>
+                    </div>
+                    <div class="glass-card">
+                        <span class="efficiency-tag">Escalabilidad</span>
+                        <h4>Arquitectura evolutiva</h4>
+                        <p>Permite pasar de una plataforma ligera a un backend propio sin perder los aprendizajes ni la data del proceso.</p>
+                    </div>
                 </div>
             </div>
+
+            <style>
+                .reto-tab-content { display: none; }
+                .reto-tab-content.active { display: block; animation: fadeIn 0.5s ease; }
+            </style>
         </div>
     </section>
 

@@ -103,3 +103,11 @@ function switchScorecardTab(event, tabId) {
     document.getElementById(tabId).classList.add('active');
     event.currentTarget.classList.add('active');
 }
+
+function switchRetoTab(event, tabId) {
+    document.querySelectorAll('.reto-tab-content').forEach(c => c.classList.remove('active'));
+    const container = event.currentTarget.closest('.container');
+    container.querySelectorAll('.scorecard-tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(tabId).classList.add('active');
+    event.currentTarget.classList.add('active');
+}
